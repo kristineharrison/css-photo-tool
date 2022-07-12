@@ -4,9 +4,11 @@ export default function StyleExample({ newImage }) {
   return (
     <div>
       <h1>{title}</h1>
-      <img src={imageUrl} alt="roses" />
+      <img class="roundCorners" src={imageUrl} alt="roses" />
       <p>{description}</p>
-      <p>{code}</p>
+      <div class="codeContainer">
+        <p class="code">{code}</p>
+      </div>
     </div>
   );
 }

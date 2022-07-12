@@ -7,7 +7,48 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.codeContainer {
+  background-color: black;
+  width: 400px;
+}
+
+.code {
+  color:rgb(0, 208, 255);
+  font-family:'Courier New', Courier, monospace;
+  font-weight: 900;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+img {
+  width: 400px;
+}
+
+.roundCorners {
+  border-radius: 25px;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.grayscale {
+  filter: grayscale(100%)
+}
+
+.opacity {
+  opacity: 0.5
+}
+
+.blur {
+  filter: blur(4px)
+}
+
+.hueRotation {
+  filter: hue-rotate(180deg)
+}
+
+.dropShadow {
+  filter: drop-shadow(8px 8px 10px green)
 }
