@@ -2,11 +2,11 @@ export default function StyleExample({ newImage }) {
   const { imageUrl, title, description, code, classStyle } = newImage;
 
   return (
-    <div>
+    <div className="example">
       <h1>{title}</h1>
-      <img className={classStyle} src={imageUrl} alt="roses" />
+      <img className={classStyle} src={imageUrl} alt="Image Example" />
       <p>{description}</p>
-      <div className="container">
+      <div className="code-container">
         <p className="code">{code}</p>
       </div>
     </div>

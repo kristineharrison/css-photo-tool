@@ -1,20 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  vertical-align: center;
+  align-items: center;
+  width: 90%;
+}
+
+aside {
+  display: flex;
+}
+
+h1 {
+  text-align: center;
 }
 
 .container {
+  display: flex;
+  /* flex-direction: column; */
+  vertical-align: center;
+  align-items: center;
+}
+
+.example {
+  display: flex;
+  flex-direction: column;
+  vertical-align: center;
+  align-items: center;
+}
+
+.code-container {
   background-color: black;
   width: 400px;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .code {
-  color:rgb(0, 208, 255);
-  font-family:'Courier New', Courier, monospace;
+  color: rgb(0, 208, 255);
+  font-family: "Courier New", Courier, monospace;
   font-weight: 900;
   padding-top: 20px;
   padding-left: 20px;
@@ -34,21 +66,26 @@ img {
 }
 
 .grayscale {
-  filter: grayscale(100%)
+  filter: grayscale(100%);
 }
 
 .opacity {
-  opacity: 0.5
+  opacity: 0.5;
 }
 
 .blur {
-  filter: blur(4px)
+  filter: blur(4px);
 }
 
 .hue {
-  filter: hue-rotate(180deg)
+  filter: hue-rotate(180deg);
 }
 
 .dropshadow {
-  filter: drop-shadow(8px 8px 10px green)
+  filter: drop-shadow(8px 8px 10px green);
+}
+
+.styles {
+  list-style: none;
+  width: 300px;
 }

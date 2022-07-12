@@ -11,7 +11,7 @@
     },
     {
       "id": 2,
-      "title": "Circled Image",
+      "title": "Circle Image",
       "imageUrl": "https://d1h3pk8iipmcfn.cloudfront.net/blog/wp-content/uploads/2019/07/03115042/Stocksy_txp95f30267efj100_Medium_440112.jpg",
       "caption": "Street Signs",
       "description": "Use the border-radius property to create a circled image.",
