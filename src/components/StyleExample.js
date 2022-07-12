@@ -1,13 +1,13 @@
 export default function StyleExample({ newImage }) {
-  const { imageUrl, title, description, code } = newImage;
+  const { imageUrl, title, description, code, classStyle } = newImage;
 
   return (
     <div>
       <h1>{title}</h1>
-      <img class="rounded" src={imageUrl} alt="roses" />
+      <img className={classStyle} src={imageUrl} alt="roses" />
       <p>{description}</p>
-      <div class="codeContainer">
-        <p class="code">{code}</p>
+      <div className="container">
+        <p className="code">{code}</p>
       </div>
     </div>
   );

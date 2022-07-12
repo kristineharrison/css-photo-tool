@@ -7,7 +7,7 @@
       "caption": "Brooklyn Bridge",
       "description": "Use the border-radius property to create rounded images.",
       "code": "img { border-radius: 10px; }",
-      "class": "rounded"
+      "classStyle": "rounded"
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "caption": "Street Signs",
       "description": "Use the border-radius property to create a circled image.",
       "code": "img { border-radius: 50% }",
-      "class": "circle"
+      "classStyle": "circle"
     },
     {
       "id": 3,
@@ -25,7 +25,7 @@
       "caption": "1958 Times Square",
       "description": "Change a color image to black and white.",
       "code": "img { filter: grayscale(100%); }",
-      "class": "grayscale"
+      "classStyle": "grayscale"
     },
     {
       "id": 4,
@@ -34,7 +34,7 @@
       "caption": "Central Park at Night",
       "description": "The opacity property can take a value from 0.0-1.0, with 1 being the default. The lower the value, the more transparent the image.",
       "code": "img { opacity: 0.5; }",
-      "class": "opacity"
+      "classStyle": "opacity"
     },
     {
       "id": 5,
@@ -43,7 +43,7 @@
       "caption": "Victorian NYC",
       "description": "Apply a blur effect to an image.",
       "code": "img { filter: blur(35px); }",
-      "class": "blur"
+      "classStyle": "blur"
     },
     {
       "id": 6,
@@ -52,7 +52,7 @@
       "caption": "Manhattan Cabs",
       "description": "Apply a hue rotation to an image.",
       "code": "img { filter: hue-rotate(90deg); }",
-      "class": "hue"
+      "classStyle": "hue"
     },
     {
       "id": 7,
@@ -61,7 +61,7 @@
       "caption": "Brooklyn Bridge",
       "description": "Apply a drop shadow effect to an image.",
       "code": "img {filter: drop-shadow(8px 8px 10px gray); }",
-      "class": "dropshadow"
+      "classStyle": "dropshadow"
     }
   ]
 }

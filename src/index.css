@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.codeContainer {
+.container {
   background-color: black;
   width: 400px;
 }
