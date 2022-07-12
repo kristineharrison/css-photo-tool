@@ -5,7 +5,7 @@ function Container() {
   const [getImage, setGetImage] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/examples/1")
+    fetch("http://localhost:3000/examples/2")
       .then((res) => res.json())
       .then((data) => setGetImage(data));
   }, []);

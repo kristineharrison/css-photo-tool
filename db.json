@@ -4,33 +4,64 @@
       "id": 1,
       "title": "Rounded Corners",
       "imageUrl": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/two-men-standing-on-a-high-catwalk-surveying-the-news-photo-1582921823.jpg",
-      "caption": "Vintage NYC Sunset",
-      "description": "Use the <span>border-radius</span> property to create rounded images.",
-      "code": "img { border-radius: 10px; }"
+      "caption": "Brooklyn Bridge",
+      "description": "Use the border-radius property to create rounded images.",
+      "code": "img { border-radius: 10px; }",
+      "class": "rounded"
     },
     {
       "id": 2,
-      "title": "Polaroid",
-      "imageUrl": "https://live.staticflickr.com/4015/4367898605_df657063f0_z.jpg",
-      "caption": "1958 Times Square"
+      "title": "Circled Image",
+      "imageUrl": "https://d1h3pk8iipmcfn.cloudfront.net/blog/wp-content/uploads/2019/07/03115042/Stocksy_txp95f30267efj100_Medium_440112.jpg",
+      "caption": "Street Signs",
+      "description": "Use the border-radius property to create a circled image.",
+      "code": "img { border-radius: 50% }",
+      "class": "circle"
     },
     {
       "id": 3,
-      "title": "Hover Overlay",
-      "imageUrl": "https://cdn-ffcgi.nitrocdn.com/ZhDYBbXPoHrCHvLPGOdQmXKAjZXwoPng/assets/static/optimized/rev-6496b27/wp-content/uploads/2020/01/2-central-park-best-unique-photo-places-nyc.jpg",
-      "caption": "Central Park at Night"
+      "title": "Grayscale",
+      "imageUrl": "https://live.staticflickr.com/4015/4367898605_df657063f0_z.jpg",
+      "caption": "1958 Times Square",
+      "description": "Change a color image to black and white.",
+      "code": "img { filter: grayscale(100%); }",
+      "class": "grayscale"
     },
     {
       "id": 4,
-      "title": "Transparent & Opacity",
-      "imageUrl": "https://untappedcities.com/wp-content/uploads/2014/05/Madison-Square-Park-Cab-Stand-Vintage-Photo-Victorian-NYC.jpg",
-      "caption": "Victorian NYC"
+      "title": "Opacity",
+      "imageUrl": "https://cdn-ffcgi.nitrocdn.com/ZhDYBbXPoHrCHvLPGOdQmXKAjZXwoPng/assets/static/optimized/rev-6496b27/wp-content/uploads/2020/01/2-central-park-best-unique-photo-places-nyc.jpg",
+      "caption": "Central Park at Night",
+      "description": "The opacity property can take a value from 0.0-1.0, with 1 being the default. The lower the value, the more transparent the image.",
+      "code": "img { opacity: 0.5; }",
+      "class": "opacity"
     },
     {
       "id": 5,
-      "title": "Filters",
+      "title": "Blur",
+      "imageUrl": "https://untappedcities.com/wp-content/uploads/2014/05/Madison-Square-Park-Cab-Stand-Vintage-Photo-Victorian-NYC.jpg",
+      "caption": "Victorian NYC",
+      "description": "Apply a blur effect to an image.",
+      "code": "img { filter: blur(35px); }",
+      "class": "blur"
+    },
+    {
+      "id": 6,
+      "title": "Hue Rotatation",
+      "imageUrl": "http://4.bp.blogspot.com/-vI9gZLxZ6nE/TazV31kixLI/AAAAAAAAdPU/pIw4aOHpFJQ/s1600/walgreens+NYC+BIG.jpg",
+      "caption": "Manhattan Cabs",
+      "description": "Apply a hue rotation to an image.",
+      "code": "img { filter: hue-rotate(90deg); }",
+      "class": "hue"
+    },
+    {
+      "id": 7,
+      "title": "Drop Shadow",
       "imageUrl": "https://cdn.vox-cdn.com/thumbor/ijSXR8X2DhcsEmFekZqPJKoGtbk=/26x0:634x456/500x375/cdn.vox-cdn.com/uploads/chorus_image/image/55920093/bkbridge_before.0.0.jpg",
-      "caption": "Brooklyn Bridge"
+      "caption": "Brooklyn Bridge",
+      "description": "Apply a drop shadow effect to an image.",
+      "code": "img {filter: drop-shadow(8px 8px 10px gray); }",
+      "class": "dropshadow"
     }
   ]
 }
