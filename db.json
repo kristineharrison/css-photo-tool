@@ -1,9 +1,24 @@
 {
-    "examples": [
-        {
-            "id": 1,
-            "url": ,
-            "title": ,
-        }
-    ]
+  "examples": [
+    {
+      "id": 1,
+      "url": "https://wallpaperaccess.com/full/1212003.jpg",
+      "title": "Vintage NYC Sunset"
+    },
+    {
+      "id": 2,
+      "url": "https://live.staticflickr.com/4015/4367898605_df657063f0_z.jpg",
+      "title": "1958 Times Square"
+    },
+    {
+      "id": 3,
+      "url": "https://cdn-ffcgi.nitrocdn.com/ZhDYBbXPoHrCHvLPGOdQmXKAjZXwoPng/assets/static/optimized/rev-6496b27/wp-content/uploads/2020/01/2-central-park-best-unique-photo-places-nyc.jpg",
+      "title": "Central Park at Night"
+    },
+    {
+      "id": 4,
+      "url": "https://untappedcities.com/wp-content/uploads/2014/05/Madison-Square-Park-Cab-Stand-Vintage-Photo-Victorian-NYC.jpg",
+      "title": "Victorian NYC"
+    }
+  ]
 }
