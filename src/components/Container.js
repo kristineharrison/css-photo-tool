@@ -12,7 +12,6 @@ function Container() {
 
   return (
     <div>
-      {/* <CSSRounded newImage={getImage} />; */}
       <StyleExample newImage={getImage} />
     </div>
   );
