@@ -1,12 +1,8 @@
-import React from "react";
 import CSSfilters from "./CSSFilters";
+import CSSRounded from "./CSSRounded";
 
 function Container() {
-
-    return (
-        <CSSfilters />
-    )
+  return <CSSRounded />;
 }
-
 
 export default Container;
