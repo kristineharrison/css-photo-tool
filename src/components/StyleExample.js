@@ -1,5 +1,5 @@
-export default function StyleExample({ newImage }) {
-  const { imageUrl, title, description, code, classStyle } = newImage;
+export default function StyleExample({ newStyle }) {
+  const { imageUrl, title, description, code, classStyle } = newStyle;
 
   return (
     <div className="example">
