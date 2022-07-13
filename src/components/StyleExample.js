@@ -15,7 +15,7 @@ export default function StyleExample({ newStyle }) {
           }}
           className={classStyle}
           src={imageUrl}
-          alt="Image Example"
+          alt="Styled Example"
         />
       ) : (
         <img
@@ -23,7 +23,7 @@ export default function StyleExample({ newStyle }) {
             setOriginalImage(!originalImage);
           }}
           src={imageUrl}
-          alt="Image Example"
+          alt="Before Example"
         />
       )}
       <p>Click to turn the style on and off.</p>
