@@ -1,8 +1,10 @@
-export default function StyleList() {
+export default function StyleList({newTitle, handleClick}) {
+
   return (
     <ul className="styles">
-      <li>Rounded Corners</li>
-      <li>Circle Image</li>
+      {newTitle.map(titleObj => {
+        return <li onClick={(e) => handleClick(titleObj)} key={titleObj.id}>{titleObj.title}</li>
+      })}
     </ul>
   );
 }
