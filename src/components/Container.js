@@ -5,6 +5,10 @@ import StyleList from "./StyleList";
 function Container() {
   const [newStyle, setNewStyle] = useState([]);
   const [newTitle, setNewTitle] = useState([]);
+  const [imagePlaceholder, setImagePlaceholder] = useState(true);
+  const [descriptionPlaceholder, setDescriptionPlaceholder] = useState(true);
+  const [titlePlaceholder, setTitlePlaceholder] = useState(true);
+  const [codePlaceholder, setCodePlaceholder] = useState(true);
 
   useEffect(() => {
     fetch("http://localhost:3000/examples")
@@ -21,10 +25,23 @@ function Container() {
   return (
     <div className="container">
       <aside>
-        <StyleList handleClick={handleClick} newTitle={newTitle} />
+        <StyleList 
+          setCodePlaceholder={setCodePlaceholder}
+          setTitlePlaceholder={setTitlePlaceholder}
+          setDescriptionPlaceholder={setDescriptionPlaceholder}
+          setImagePlaceholder={setImagePlaceholder}
+          handleClick={handleClick} 
+          newTitle={newTitle} 
+        />
       </aside>
       <section>
-        <StyleExample newStyle={newStyle} />
+        <StyleExample 
+          codePlaceholder={codePlaceholder}
+          titlePlaceholder={titlePlaceholder}
+          descriptionPlaceholder={descriptionPlaceholder}
+          imagePlaceholder={imagePlaceholder} 
+          newStyle={newStyle} 
+        />
       </section>
     </div>
   );
