@@ -23,6 +23,13 @@ h1 {
   text-align: center;
 }
 
+.main-container {
+  display: flex;
+  flex-direction: column;
+  vertical-align: center;
+  align-items: center;
+}
+
 .container {
   display: flex;
   /* flex-direction: column; */
@@ -94,10 +101,16 @@ img {
   display: flex;
   flex-direction: column;
   margin: 30px;
-  max-width: 300px;
-  max-height: 300px;
 }
 
+.random img {
+  width: 200px;
+  max-height: 200px;
+}
 .random button {
   margin-top: 20px;
+}
+
+.code-editor {
+  border: 1px solid black;
 }

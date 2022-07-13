@@ -42,7 +42,7 @@
       "imageUrl": "https://untappedcities.com/wp-content/uploads/2014/05/Madison-Square-Park-Cab-Stand-Vintage-Photo-Victorian-NYC.jpg",
       "caption": "Victorian NYC",
       "description": "Apply a blur effect to an image.",
-      "code": "img { filter: blur(35px); }",
+      "code": "img { filter: blur(20px); }",
       "classStyle": "blur"
     },
     {

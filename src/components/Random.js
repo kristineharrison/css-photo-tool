@@ -1,4 +1,5 @@
 import { useState } from "react";
+import EditForm from "./EditForm";
 
 export default function Random() {
   const [randomImage, setRandomImage] = useState("./assets/tryitout.png");
@@ -11,8 +12,9 @@ export default function Random() {
 
   return (
     <div className="random">
-      <img src={randomImage} alt="Random Image" />
+      <img src={randomImage} alt="Random Image" style={{ opacity: 0.25 }} />
       <button onClick={handleClick}>Get Random Image</button>
+      <EditForm />
     </div>
   );
 }
