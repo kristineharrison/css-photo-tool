@@ -2,7 +2,7 @@ export default function ImageCard({ eachImage, onDelete }) {
   const { image, id, style } = eachImage;
 
   function handleDeleteClick() {
-    fetch(`http://localhost:3000/gallery/${id}`, {
+    fetch(`http://localhost:3000/cssgallery/${id}`, {
       method: "DELETE",
     });
     onDelete(id);

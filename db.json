@@ -47,7 +47,7 @@
     },
     {
       "id": 6,
-      "title": "Hue Rotatation",
+      "title": "Hue Rotation",
       "imageUrl": "http://4.bp.blogspot.com/-vI9gZLxZ6nE/TazV31kixLI/AAAAAAAAdPU/pIw4aOHpFJQ/s1600/walgreens+NYC+BIG.jpg",
       "caption": "Manhattan Cabs",
       "description": "Apply a hue rotation to an image.",
@@ -96,18 +96,9 @@
       "id": 8
     },
     {
-      "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/golden-retriever-royalty-free-image-506756303-1560962726.jpg?crop=0.672xw:1.00xh;0.166xw,0&resize=640:*",
-      "id": 10
-    },
-    {
       "image": "https://media.wired.co.uk/photos/60c8730fa81eb7f50b44037e/3:2/w_3329,h_2219,c_limit/1521-WIRED-Cat.jpeg",
       "style": "hue",
       "id": 11
-    },
-    {
-      "image": "https://media.wired.co.uk/photos/60c8730fa81eb7f50b44037e/3:2/w_3329,h_2219,c_limit/1521-WIRED-Cat.jpeg",
-      "style": "blur",
-      "id": 12
     }
   ]
 }

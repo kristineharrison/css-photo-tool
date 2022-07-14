@@ -24,26 +24,23 @@ function Styles() {
   }
 
   return (
-    <div className="container">
-      <aside>
-        <StyleList
-          setCodePlaceholder={setCodePlaceholder}
-          setTitlePlaceholder={setTitlePlaceholder}
-          setDescriptionPlaceholder={setDescriptionPlaceholder}
-          setImagePlaceholder={setImagePlaceholder}
-          handleClick={handleClick}
-          newTitle={newTitle}
-        />
-      </aside>
-      <section>
-        <StyleExample
-          codePlaceholder={codePlaceholder}
-          titlePlaceholder={titlePlaceholder}
-          descriptionPlaceholder={descriptionPlaceholder}
-          imagePlaceholder={imagePlaceholder}
-          newStyle={newStyle}
-        />
-      </section>
+    <div className="style-container">
+      <StyleList
+        setCodePlaceholder={setCodePlaceholder}
+        setTitlePlaceholder={setTitlePlaceholder}
+        setDescriptionPlaceholder={setDescriptionPlaceholder}
+        setImagePlaceholder={setImagePlaceholder}
+        handleClick={handleClick}
+        newTitle={newTitle}
+      />
+
+      <StyleExample
+        codePlaceholder={codePlaceholder}
+        titlePlaceholder={titlePlaceholder}
+        descriptionPlaceholder={descriptionPlaceholder}
+        imagePlaceholder={imagePlaceholder}
+        newStyle={newStyle}
+      />
     </div>
   );
 }
