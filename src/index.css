@@ -82,7 +82,7 @@ img {
 }
 
 .dropshadow {
-  filter: drop-shadow(8px 8px 10px green);
+  filter: drop-shadow(8px 8px 10px gray);
 }
 
 .styles {
