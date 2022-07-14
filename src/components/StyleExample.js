@@ -51,9 +51,11 @@ export default function StyleExample({
 
       <small>Click to view the original image</small>
       {descriptionPlaceholder ? (
-        <p>Use the border-radius property to create rounded images.</p>
+        <p className="description">
+          Use the border-radius property to create rounded images.
+        </p>
       ) : (
-        <p>{description}</p>
+        <p className="description">{description}</p>
       )}
 
       <div className="code-container">

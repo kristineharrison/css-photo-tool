@@ -13,7 +13,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: flex;
-  vertical-align: center;
   padding: 40px;
   width: 100%;
   height: 100%;
@@ -21,16 +20,11 @@ body {
 
 header {
   display: flex;
-  margin: auto;
+  margin: 0;
   /* width: 100%; */
   height: 100px;
   align-items: baseline;
   justify-content: space-between;
-}
-
-.nav {
-  display: flex;
-  flex-flow: row wrap;
 }
 
 .link-styles {
@@ -100,16 +94,12 @@ img {
 .style-container {
   display: flex;
   flex-direction: row;
-  /* vertical-align: center;
-  align-self: center; */
-  /* margin: auto; */
 }
 
 .style-example {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 500px;
 }
 
 .style-menu {
@@ -231,7 +221,7 @@ img {
 }
 
 .description {
-  width: 40%;
+  width: 60%;
   margin-top: 50px;
   text-align: center;
 }
