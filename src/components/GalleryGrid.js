@@ -11,5 +11,5 @@ export default function GalleryGrid({ imageArray, onDelete }) {
     );
   });
 
-  return <div id="display">{cards}</div>;
+  return <div id="grid">{cards}</div>;
 }

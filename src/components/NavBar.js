@@ -1,46 +1,15 @@
 import { NavLink } from "react-router-dom";
 
-const linkStyles = {
-  display: "inline-block",
-  width: "200px",
-  padding: "12px",
-  margin: "0 6px 6px",
-  background: "blue",
-  textDecoration: "none",
-  color: "white",
-};
-
 export default function NavBar() {
   return (
-    <div>
-      <NavLink
-        to="/"
-        exact
-        style={linkStyles}
-        activeStyle={{
-          background: "darkblue",
-        }}
-      >
+    <div className="nav">
+      <NavLink to="/" exact className="link-styles">
         Home
       </NavLink>
-      <NavLink
-        to="/styles"
-        exact
-        style={linkStyles}
-        activeStyle={{
-          background: "darkblue",
-        }}
-      >
+      <NavLink to="/styles" exact className="link-styles">
         CSS Styles
       </NavLink>
-      <NavLink
-        to="/gallery"
-        exact
-        style={linkStyles}
-        activeStyle={{
-          background: "darkblue",
-        }}
-      >
+      <NavLink to="/gallery" exact className="link-styles">
         Try it Out
       </NavLink>
     </div>
