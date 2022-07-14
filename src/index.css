@@ -224,3 +224,23 @@ img {
   margin-top: 20px;
   width: 200px;
 }
+
+.polaroid {
+  margin-top:25px;
+  margin-left:25px;
+  width:400px;
+  height:400px;
+  object-fit:cover;
+  filter: hue-rotate(-25deg);
+}
+
+#polaroid-container {
+  width: 450px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#polaroidText {
+  text-align: center;
+  padding: 10px 20px;
+}
