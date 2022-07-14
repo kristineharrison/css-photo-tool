@@ -1,15 +1,11 @@
-import ImageCard from "./ImageCard";
+import Form from "./Form";
+import GalleryGrid from "./GalleryGrid";
 
-export default function Gallery({ imageArray, onDelete }) {
-  const cards = imageArray.map((eachImage) => {
-    return (
-      <ImageCard
-        key={`image-${eachImage.id}`}
-        eachImage={eachImage}
-        onDelete={onDelete}
-      />
-    );
-  });
-
-  return <div id="gallery">{cards}</div>;
+export default function Gallery({ imageArray, onDelete, addNewImage }) {
+  return (
+    <div>
+      <Form addNewImage={addNewImage} />
+      <GalleryGrid imageArray={imageArray} onDelete={onDelete} />
+    </div>
+  );
 }

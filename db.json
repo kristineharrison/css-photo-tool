@@ -64,7 +64,7 @@
       "classStyle": "dropshadow"
     }
   ],
-  "gallery": [
+  "cssgallery": [
     {
       "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/golden-retriever-royalty-free-image-506756303-1560962726.jpg?crop=0.672xw:1.00xh;0.166xw,0&resize=640:*",
       "style": "circle",
@@ -94,10 +94,6 @@
       "image": "https://images.unsplash.com/photo-1596492784531-6e6eb5ea9993?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2hpdGUlMjBkb2d8ZW58MHx8MHx8&w=1000&q=80",
       "style": "blur",
       "id": 8
-    },
-    {
-      "style": "grayscale",
-      "id": 9
     },
     {
       "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/golden-retriever-royalty-free-image-506756303-1560962726.jpg?crop=0.672xw:1.00xh;0.166xw,0&resize=640:*",

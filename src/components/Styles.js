@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import StyleExample from "./StyleExample";
 import StyleList from "./StyleList";
 
-function Container() {
+function Styles() {
   const [newStyle, setNewStyle] = useState([]);
   const [newTitle, setNewTitle] = useState([]);
   const [imagePlaceholder, setImagePlaceholder] = useState(true);
@@ -13,38 +13,39 @@ function Container() {
   useEffect(() => {
     fetch("http://localhost:3000/examples")
       .then((res) => res.json())
-      .then((data) =>{
-            setNewStyle(data)
-            setNewTitle(data)})
+      .then((data) => {
+        setNewStyle(data);
+        setNewTitle(data);
+      });
   }, []);
 
   function handleClick(newStyle) {
-    setNewStyle(newStyle)
+    setNewStyle(newStyle);
   }
 
   return (
     <div className="container">
       <aside>
-        <StyleList 
+        <StyleList
           setCodePlaceholder={setCodePlaceholder}
           setTitlePlaceholder={setTitlePlaceholder}
           setDescriptionPlaceholder={setDescriptionPlaceholder}
           setImagePlaceholder={setImagePlaceholder}
-          handleClick={handleClick} 
-          newTitle={newTitle} 
+          handleClick={handleClick}
+          newTitle={newTitle}
         />
       </aside>
       <section>
-        <StyleExample 
+        <StyleExample
           codePlaceholder={codePlaceholder}
           titlePlaceholder={titlePlaceholder}
           descriptionPlaceholder={descriptionPlaceholder}
-          imagePlaceholder={imagePlaceholder} 
-          newStyle={newStyle} 
+          imagePlaceholder={imagePlaceholder}
+          newStyle={newStyle}
         />
       </section>
     </div>
   );
 }
 
-export default Container;
+export default Styles;

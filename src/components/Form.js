@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function ImageForm({ addNewImage }) {
+export default function Form({ addNewImage }) {
   const [formData, setFormData] = useState({
     image: "",
     style: "",

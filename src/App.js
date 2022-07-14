@@ -1,15 +1,15 @@
 import { useState, useEffect } from "react";
-import Container from "./components/Container";
+import Styles from "./components/Styles";
 import Header from "./components/Header";
-import Random from "./components/Random";
-import ImageForm from "./components/ImageForm";
 import Gallery from "./components/Gallery";
+import Home from "./components/Home";
+import { Route, Switch } from "react-router-dom";
 
 export default function App() {
   const [imageArray, setImageArray] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/gallery")
+    fetch("http://localhost:3000/cssgallery")
       .then((res) => res.json())
       .then((data) => setImageArray(data));
   }, []);
@@ -17,7 +17,7 @@ export default function App() {
   function addNewImage(newImage) {
     setImageArray((imageArray) => [...imageArray, newImage]);
 
-    fetch("http://localhost:3000/gallery", {
+    fetch("http://localhost:3000/cssgallery", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newImage),
@@ -30,12 +30,23 @@ export default function App() {
   }
 
   return (
-    <>
+    <div>
       <Header />
-      <Container imageArray={imageArray} onDelete={onDelete} />
-      <Random />
-      <ImageForm addNewImage={addNewImage} />
-      <Gallery imageArray={imageArray} onDelete={onDelete} />
-    </>
+      <Switch>
+        <Route exact path="/styles">
+          <Styles imageArray={imageArray} onDelete={onDelete} />
+        </Route>
+        <Route exact path="/gallery">
+          <Gallery
+            imageArray={imageArray}
+            onDelete={onDelete}
+            addNewImage={addNewImage}
+          />
+        </Route>
+        <Route exact path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </div>
   );
 }
