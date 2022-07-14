@@ -81,24 +81,14 @@
       "id": 5
     },
     {
-      "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/HB4AT3D3IMI6TMPTWIZ74WAR54.jpg&w=1200",
-      "style": "opacity",
-      "id": 6
-    },
-    {
-      "image": "https://www.countrysideveterinaryclinic.org/sites/default/files/styles/large/public/australian-shepherd-dog-breed-info.jpg?itok=XVVrY23r",
-      "style": "rounded",
-      "id": 7
-    },
-    {
-      "image": "https://images.unsplash.com/photo-1596492784531-6e6eb5ea9993?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2hpdGUlMjBkb2d8ZW58MHx8MHx8&w=1000&q=80",
-      "style": "blur",
-      "id": 8
-    },
-    {
       "image": "https://media.wired.co.uk/photos/60c8730fa81eb7f50b44037e/3:2/w_3329,h_2219,c_limit/1521-WIRED-Cat.jpeg",
       "style": "hue",
       "id": 11
+    },
+    {
+      "image": "https://www.countrysideveterinaryclinic.org/sites/default/files/styles/large/public/australian-shepherd-dog-breed-info.jpg?itok=XVVrY23r",
+      "style": "",
+      "id": 16
     }
   ]
 }

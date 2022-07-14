@@ -49,7 +49,7 @@ export default function StyleExample({
         <img onClick={handleClick} src={imageUrl} alt="Example" />
       )}
 
-      <small>Click to view the original image</small>
+      <small>Click to toggle between the styled and original image.</small>
       {descriptionPlaceholder ? (
         <p className="description">
           Use the border-radius property to create rounded images.
