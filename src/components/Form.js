@@ -18,7 +18,8 @@ export default function Form({ addNewImage }) {
     };
     addNewImage(newImage);
     setFormData({
-      imageUrl: "",
+      image: "",
+      style: "",
     });
   }
 

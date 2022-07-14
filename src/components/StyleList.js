@@ -7,8 +7,8 @@ export default function StyleList({
   setCodePlaceholder,
 }) {
   return (
-    <div>
-      <ul className="style-menu">
+    <div className="style-menu">
+      <ul>
         {newTitle.map((titleObj) => {
           return (
             <li

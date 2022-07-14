@@ -23,13 +23,14 @@ export default function Home() {
           ) : (
             <img
               onClick={handleClick}
+              className="not-polaroid"
               src="https://images.unsplash.com/photo-1596999233004-6ffb15fc364c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=685&q=80"
             ></img>
           )}
           <div id="polaroidText">
             <p>
               Sullivan's Island, South Carolina.<br></br>This was created with a
-              polaroid effect.
+              Polaroid effect.
             </p>
           </div>
         </div>
@@ -44,18 +45,19 @@ export default function Home() {
           ) : (
             <img
               onClick={handleClick}
+              className="not-polaroid"
               src="https://images.unsplash.com/photo-1596999233004-6ffb15fc364c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=685&q=80"
             ></img>
           )}
           <div id="polaroidText">
-            <p>
+            {/* <p>
               Sullivan's Island, South Carolina.<br></br>This was created with a
               Polaroid effect.
-            </p>
+            </p> */}
           </div>
         </div>
       )}
-      <small>Click to view the original image.</small>
+      <small>Click to toggle between the styled and original image.</small>
       <p className="description">
         Styling images using CSS may seem more time consuming than editing an
         image in Photoshop, but there are many advantages to being able to

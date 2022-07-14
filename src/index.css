@@ -14,17 +14,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
   display: flex;
   padding: 40px;
-  width: 100%;
-  height: 100%;
 }
 
 header {
   display: flex;
   margin: 0;
-  /* width: 100%; */
   height: 100px;
   align-items: baseline;
-  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .link-styles {
@@ -42,6 +43,7 @@ header {
 h1 {
   text-align: center;
   color: #008080;
+  width: 40%;
 }
 
 h2 {
@@ -58,7 +60,11 @@ small {
 }
 
 img {
-  width: 400px;
+  width: 500px;
+}
+
+div {
+  width: 100%;
 }
 
 /*** Image Styles ***/
@@ -94,18 +100,24 @@ img {
 .style-container {
   display: flex;
   flex-direction: row;
+  align-content: center;
+  width: 80%;
 }
 
 .style-example {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .style-menu {
   margin-top: 50px;
+  width: 50%;
+}
+
+.style-menu ul {
   list-style: none;
-  width: 300px;
 }
 
 .style-menu li {
@@ -120,22 +132,23 @@ img {
 
 .code-container {
   background-color: black;
-  width: 400px;
+  width: auto;
   border-radius: 10px;
   text-align: center;
+  padding: 20px;
 }
 
 .code {
   color: rgb(0, 208, 255);
   font-family: "Courier New", Courier, monospace;
   font-weight: 900;
-  padding-top: 20px;
+  /* padding-top: 20px;
   padding-left: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 20px; */
 }
 
 /*** Gallery Styles ***/
-#grid {
+.grid {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
@@ -147,6 +160,8 @@ img {
 .card {
   font-family: "Marck Script", cursive;
   font-size: 1em;
+  width: auto;
+  overflow: hidden;
   padding: 20px;
 }
 
@@ -236,10 +251,20 @@ img {
   filter: hue-rotate(-25deg);
 }
 
+.not-polaroid {
+  height: 450px;
+  display: flex;
+  display: block;
+  margin: auto;
+  margin-top: 25px;
+  /* margin-bottom: 10px; */
+}
+
 #polaroid-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   width: 450px;
   margin-bottom: 10px;
   background-color: white;
