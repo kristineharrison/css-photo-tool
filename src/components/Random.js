@@ -11,7 +11,7 @@ export default function Random() {
 
   return (
     <div className="random">
-      <img src={randomImage} alt="Random Image" />
+      <img src={randomImage} alt="Dog" />
       <button onClick={handleClick}>Get Random Image</button>
     </div>
   );
