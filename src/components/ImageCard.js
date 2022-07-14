@@ -11,7 +11,9 @@ export default function ImageCard({ eachImage, onDelete }) {
   return (
     <div className="card">
       <img src={image} alt="CSS" className={style} />
-      <button onClick={handleDeleteClick}>Delete</button>
+      <button className="delete" onClick={handleDeleteClick}>
+        Delete
+      </button>
     </div>
   );
 }

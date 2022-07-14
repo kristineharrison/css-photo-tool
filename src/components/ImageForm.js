@@ -19,7 +19,6 @@ export default function ImageForm({ addNewImage }) {
     addNewImage(newImage);
     setFormData({
       imageUrl: "",
-      style: "",
     });
   }
 
@@ -31,12 +30,17 @@ export default function ImageForm({ addNewImage }) {
           type="text"
           name="image"
           placeholder="Enter an image URL..."
-          value={formData.image}
+          defaultValue={formData.image}
           onChange={handleChange}
         />
         <br />
 
-        <select name="style" onChange={handleChange} value={formData.style}>
+        <select
+          name="style"
+          onChange={handleChange}
+          id="stylemenu"
+          value={formData.style}
+        >
           <option value="">Pick a Style</option>
           <option value="rounded">Rounded Corners</option>
           <option value="circle">Circle Image</option>
@@ -47,12 +51,7 @@ export default function ImageForm({ addNewImage }) {
           <option value="dropshadow">Drop Shadow</option>
         </select>
         <br />
-        <input
-          type="submit"
-          name="submit"
-          value="Create New Image"
-          className="submit"
-        />
+        <button type="submit">Create New Image</button>
       </form>
     </div>
   );
