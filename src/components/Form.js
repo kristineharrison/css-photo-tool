@@ -23,35 +23,35 @@ export default function Form({ addNewImage }) {
   }
 
   return (
-    <div className="container">
+    <div className="form">
       <form onSubmit={handleSubmit}>
-        <h3>Try out an image!</h3>
-        <input
-          type="text"
-          name="image"
-          placeholder="Enter an image URL..."
-          defaultValue={formData.image}
-          onChange={handleChange}
-        />
-        <br />
+        <h2>Try out an image!</h2>
+        <div className="form-fields">
+          <input
+            type="text"
+            name="image"
+            placeholder="Enter an image URL..."
+            defaultValue={formData.image}
+            onChange={handleChange}
+          />
 
-        <select
-          name="style"
-          onChange={handleChange}
-          id="stylemenu"
-          value={formData.style}
-        >
-          <option value="">Pick a Style</option>
-          <option value="rounded">Rounded Corners</option>
-          <option value="circle">Circle Image</option>
-          <option value="grayscale">Grayscale</option>
-          <option value="opacity">Opacity</option>
-          <option value="blur">Blur Effect</option>
-          <option value="hue">Hue Rotation</option>
-          <option value="dropshadow">Drop Shadow</option>
-        </select>
-        <br />
-        <button type="submit">Create New Image</button>
+          <select
+            name="style"
+            onChange={handleChange}
+            id="stylemenu"
+            value={formData.style}
+          >
+            <option value="">Pick a Style</option>
+            <option value="rounded">Rounded Corners</option>
+            <option value="circle">Circle Image</option>
+            <option value="grayscale">Grayscale</option>
+            <option value="opacity">Opacity</option>
+            <option value="blur">Blur Effect</option>
+            <option value="hue">Hue Rotation</option>
+            <option value="dropshadow">Drop Shadow</option>
+          </select>
+          <button type="submit">Create New Image</button>
+        </div>
       </form>
     </div>
   );

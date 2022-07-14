@@ -2,61 +2,77 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 18px;
+  margin: 0;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Rubik", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: flex;
   vertical-align: center;
-  align-items: center;
-  width: 90%;
+  padding: 40px;
+  width: 100%;
+  height: 100%;
 }
 
-aside {
+header {
   display: flex;
+  margin: auto;
+  /* width: 100%; */
+  height: 100px;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+/* div {
+  display: flex;
+  width: 100%;
+} */
+
+.nav {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.link-styles {
+  color: #008080;
+  text-decoration: none;
+  font-size: 1.5em;
+  margin: 20px;
+  text-align: center;
+}
+
+.link-styles:active {
+  color: rgb(223, 105, 42);
 }
 
 h1 {
   text-align: center;
+  color: #008080;
 }
 
-.container {
-  display: flex;
-  /* flex-direction: column; */
-  vertical-align: center;
-  align-items: center;
-}
-
-.example {
-  display: flex;
-  flex-direction: column;
-  vertical-align: center;
-  align-items: center;
-}
-
-.code-container {
-  background-color: black;
-  width: 400px;
-  border-radius: 10px;
+h2 {
+  font-family: "Marck Script", cursive;
+  font-size: 2em;
+  margin: 20px;
   text-align: center;
+  color: #008080;
 }
 
-.code {
-  color: rgb(0, 208, 255);
-  font-family: "Courier New", Courier, monospace;
-  font-weight: 900;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-bottom: 20px;
+small {
+  margin-top: 4px;
+  font-style: italic;
 }
 
 img {
   width: 400px;
 }
 
+/*** Image Styles ***/
 .rounded {
   border-radius: 25px;
 }
@@ -85,11 +101,115 @@ img {
   filter: drop-shadow(8px 8px 10px gray);
 }
 
-.styles {
+/*** Style Examples ***/
+.style-container {
+  display: flex;
+  flex-direction: row;
+  /* vertical-align: center;
+  align-self: center; */
+  /* margin: auto; */
+}
+
+.style-example {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+}
+
+.style-menu {
+  margin-top: 50px;
   list-style: none;
   width: 300px;
 }
 
+.style-menu li {
+  padding: 5px 0;
+  font-weight: bold;
+  color: rgb(50, 50, 50);
+}
+
+.style-menu li:active {
+  color: rgb(223, 105, 42);
+}
+
+.code-container {
+  background-color: black;
+  width: 400px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.code {
+  color: rgb(0, 208, 255);
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 900;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+/*** Gallery Styles ***/
+#grid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: baseline;
+  align-content: space-around;
+  margin-top: 40px;
+}
+
+.card {
+  font-family: "Marck Script", cursive;
+  font-size: 1em;
+  padding: 20px;
+}
+
+.card button {
+  border: 0;
+  background-color: transparent;
+  float: right;
+}
+
+.card > img {
+  width: auto;
+  max-height: 175px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.form-fields {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.form input {
+  width: 40%;
+  margin: 10px;
+  padding: 4px;
+}
+
+.form select {
+  margin: 10px;
+  color: #008080;
+  padding: 4px;
+}
+
+.form button {
+  margin: 10px;
+  color: #fff;
+  background-color: #008080;
+  border-radius: 3px;
+  border-style: none;
+  padding: 5px 8px;
+}
+
+/*** Random Generator ***/
 .random {
   display: flex;
   flex-direction: column;
@@ -104,20 +224,6 @@ img {
   margin-top: 20px;
   width: 200px;
 }
-
-.card > img {
-  width: 200px;
-}
-
-#display {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  align-items: baseline;
-}
-
-/* .delete {
-} */
 
 .polaroid {
   margin-top:25px;

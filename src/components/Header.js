@@ -2,9 +2,9 @@ import NavBar from "./NavBar";
 
 export default function Header() {
   return (
-    <div>
+    <header>
       <h1>CSS Image Styles</h1>
       <NavBar />
-    </div>
+    </header>
   );
 }

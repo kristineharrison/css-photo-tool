@@ -21,7 +21,7 @@ export default function StyleExample({
   }
 
   return (
-    <div className="example">
+    <div className="style-example">
       {titlePlaceholder ? <h1>Rounded Corners</h1> : <h1>{title}</h1>}
       {imagePlaceholder ? (
         classPlaceholderToggle ? (
@@ -49,7 +49,7 @@ export default function StyleExample({
         <img onClick={handleClick} src={imageUrl} alt="Example" />
       )}
 
-      <p>Click to view the original image</p>
+      <small>Click to view the original image</small>
       {descriptionPlaceholder ? (
         <p>Use the border-radius property to create rounded images.</p>
       ) : (

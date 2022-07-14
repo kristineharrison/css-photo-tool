@@ -2,7 +2,7 @@ export default function ImageCard({ eachImage, onDelete }) {
   const { image, id, style } = eachImage;
 
   function handleDeleteClick() {
-    fetch(`http://localhost:3000/gallery/${id}`, {
+    fetch(`http://localhost:3000/cssgallery/${id}`, {
       method: "DELETE",
     });
     onDelete(id);
@@ -11,9 +11,9 @@ export default function ImageCard({ eachImage, onDelete }) {
   return (
     <div className="card">
       <img src={image} alt="CSS" className={style} />
-      <button className="delete" onClick={handleDeleteClick}>
-        Delete
-      </button>
+      <br />
+      {style}
+      <button onClick={handleDeleteClick}>X</button>
     </div>
   );
 }
