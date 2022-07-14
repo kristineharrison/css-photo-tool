@@ -2,7 +2,6 @@ import { useState } from "react";
 
 export default function StyleExample({ newStyle, imagePlaceholder, descriptionPlaceholder, titlePlaceholder, codePlaceholder }) {
   const { imageUrl, title, description, code, classStyle } = newStyle;
-
   const [classToggle, setClassToggle] = useState({classStyle});
   const [classPlaceholderToggle, setClassPlaceholderToggle] = useState("");
   const plainText = "img { border-radius: 10px; }"
@@ -48,6 +47,7 @@ export default function StyleExample({ newStyle, imagePlaceholder, descriptionPl
         :
         <p>{description}</p>
       }
+
       <div className="code-container">
       {codePlaceholder ?
         <p className="code">{plainText}</p>
