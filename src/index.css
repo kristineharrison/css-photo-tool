@@ -28,11 +28,6 @@ header {
   justify-content: space-between;
 }
 
-/* div {
-  display: flex;
-  width: 100%;
-} */
-
 .nav {
   display: flex;
   flex-flow: row wrap;
@@ -57,7 +52,7 @@ h1 {
 
 h2 {
   font-family: "Marck Script", cursive;
-  font-size: 2em;
+  font-size: 2.5em;
   margin: 20px;
   text-align: center;
   color: #008080;
@@ -225,17 +220,38 @@ img {
   width: 200px;
 }
 
+/* Home Styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+}
+
+.description {
+  width: 40%;
+  margin-top: 50px;
+  text-align: center;
+}
+
 .polaroid {
-  margin-top:25px;
-  margin-left:25px;
-  width:400px;
-  height:400px;
-  object-fit:cover;
+  display: flex;
+  margin-top: 25px;
+  margin-left: 25px;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
   filter: hue-rotate(-25deg);
 }
 
 #polaroid-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 450px;
+  margin-bottom: 10px;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
