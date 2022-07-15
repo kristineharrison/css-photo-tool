@@ -176,7 +176,7 @@ div {
 .form {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .form-fields {
@@ -187,7 +187,7 @@ div {
 
 .form input {
   width: 30%;
-  margin: 10px;
+  margin: 5px 10px;
   padding: 4px;
 }
 
@@ -212,7 +212,6 @@ div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 30px;
 }
 
 .random img {

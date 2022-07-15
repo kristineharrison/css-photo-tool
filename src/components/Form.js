@@ -27,13 +27,13 @@ export default function Form({ addNewImage, randomImage }) {
     <div className="form">
       <form onSubmit={handleSubmit}>
         <div className="form-fields">
-          <input
+          {/* <input
             type="text"
             name="image"
             placeholder="Or enter an image URL..."
             defaultValue={formData.image}
             onChange={handleChange}
-          />
+          /> */}
 
           <select
             name="style"
