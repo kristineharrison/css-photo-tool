@@ -13,13 +13,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: flex;
-  padding: 40px;
+  margin: 40px 60px;
 }
 
 header {
   display: flex;
   margin: 0;
-  height: 100px;
+  /* height: 100px; */
   align-items: baseline;
 }
 
@@ -142,9 +142,6 @@ div {
   color: rgb(0, 208, 255);
   font-family: "Courier New", Courier, monospace;
   font-weight: 900;
-  /* padding-top: 20px;
-  padding-left: 20px;
-  padding-bottom: 20px; */
 }
 
 /*** Gallery Styles ***/

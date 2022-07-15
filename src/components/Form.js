@@ -18,7 +18,7 @@ export default function Form({ addNewImage }) {
     };
     addNewImage(newImage);
     setFormData({
-      image: "",
+      image: " ",
       style: "",
     });
   }
@@ -26,7 +26,6 @@ export default function Form({ addNewImage }) {
   return (
     <div className="form">
       <form onSubmit={handleSubmit}>
-        <h2>Try out an image!</h2>
         <div className="form-fields">
           <input
             type="text"

@@ -11,17 +11,19 @@ export default function Home() {
 
   return (
     <div className="container">
-      <h1>Why Using CSS Styles Is Helpful</h1>
+      <h2>Why Using CSS Styles is Helpful</h2>
       {polaroidContainer ? (
         <div id="polaroid-container">
           {polaroidImage ? (
             <img
+              alt=""
               onClick={handleClick}
               className="polaroid"
               src="https://images.unsplash.com/photo-1596999233004-6ffb15fc364c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=685&q=80"
             ></img>
           ) : (
             <img
+              alt=""
               onClick={handleClick}
               className="not-polaroid"
               src="https://images.unsplash.com/photo-1596999233004-6ffb15fc364c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=685&q=80"
@@ -38,12 +40,14 @@ export default function Home() {
         <div>
           {polaroidImage ? (
             <img
+              alt=""
               onClick={handleClick}
               className="polaroid"
               src="https://images.unsplash.com/photo-1596999233004-6ffb15fc364c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=685&q=80"
             ></img>
           ) : (
             <img
+              alt=""
               onClick={handleClick}
               className="not-polaroid"
               src="https://images.unsplash.com/photo-1596999233004-6ffb15fc364c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=685&q=80"

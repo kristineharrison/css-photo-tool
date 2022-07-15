@@ -71,11 +71,6 @@
       "id": 3
     },
     {
-      "image": "https://kb.rspca.org.au/wp-content/uploads/2021/07/collie-beach-bokeh.jpg",
-      "style": "hue",
-      "id": 4
-    },
-    {
       "image": "https://i.natgeofe.com/n/5f35194b-af37-4f45-a14d-60925b280986/NationalGeographic_2731043.jpg",
       "style": "dropshadow",
       "id": 5
@@ -86,9 +81,34 @@
       "id": 11
     },
     {
-      "image": "https://www.countrysideveterinaryclinic.org/sites/default/files/styles/large/public/australian-shepherd-dog-breed-info.jpg?itok=XVVrY23r",
-      "style": "",
+      "image": "https://kb.rspca.org.au/wp-content/uploads/2021/07/collie-beach-bokeh.jpg",
+      "style": "opacity",
+      "id": 12
+    },
+    {
+      "image": "https://media.istockphoto.com/photos/cute-happy-dog-playing-with-a-stick-picture-id1184184060?k=20&m=1184184060&s=612x612&w=0&h=bxEn6LtJBegPuSwsL9RlyPob-7Si6lLpnROvLadFaAg=",
+      "style": "blur",
+      "id": 13
+    },
+    {
+      "image": "https://th-thumbnailer.cdn-si-edu.com/SdKYWifCKfE2g8O-po_SO99hQ-Y=/1000x750/filters:no_upscale():focal(3126x2084:3127x2085)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/ec/e6/ece69181-708a-496e-b2b7-eaf7078b99e0/gettyimages-1310156391.jpg",
+      "style": "grayscale",
+      "id": 14
+    },
+    {
+      "image": "https://static01.nyt.com/images/2022/02/08/science/27DOG-GENES/27DOG-GENES-mediumSquareAt3X.jpg",
+      "style": "circle",
+      "id": 15
+    },
+    {
+      "image": "https://media.wired.co.uk/photos/60c8730fa81eb7f50b44037e/3:2/w_3329,h_2219,c_limit/1521-WIRED-Cat.jpeg",
+      "style": "rounded",
       "id": 16
+    },
+    {
+      "image": "https://www.countrysideveterinaryclinic.org/sites/default/files/styles/large/public/australian-shepherd-dog-breed-info.jpg?itok=XVVrY23r",
+      "style": "blur",
+      "id": 19
     }
   ]
 }
