@@ -15,6 +15,9 @@ export default function App() {
         <Route exact path="/gallery">
           <Gallery />
         </Route>
+        <Route exact path="/home">
+          <Home />
+        </Route>
         <Route exact path="/">
           <Home />
         </Route>
