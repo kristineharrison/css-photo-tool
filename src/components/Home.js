@@ -11,7 +11,7 @@ export default function Home() {
 
   return (
     <div className="container">
-      <h1>Why Using CSS Styles Is Helpful</h1>
+      <h2>Why Using CSS Styles is Helpful</h2>
       {polaroidContainer ? (
         <div id="polaroid-container">
           {polaroidImage ? (

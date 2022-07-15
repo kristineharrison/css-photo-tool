@@ -15,7 +15,7 @@ export default function App() {
   }, []);
 
   function addNewImage(newImage) {
-    setImageArray((imageArray) => [...imageArray, newImage]);
+    setImageArray((imageArray) => [newImage, ...imageArray]);
 
     fetch("http://localhost:3000/cssgallery", {
       method: "POST",

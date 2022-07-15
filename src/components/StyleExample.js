@@ -22,7 +22,7 @@ export default function StyleExample({
 
   return (
     <div className="style-example">
-      {titlePlaceholder ? <h1>Rounded Corners</h1> : <h1>{title}</h1>}
+      {titlePlaceholder ? <h2>Rounded Corners</h2> : <h2>{title}</h2>}
       {imagePlaceholder ? (
         classPlaceholderToggle ? (
           <img
