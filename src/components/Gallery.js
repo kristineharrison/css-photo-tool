@@ -5,6 +5,7 @@ import Random from "./Random";
 
 export default function Gallery() {
   const [imageArray, setImageArray] = useState([]);
+  const [randomImage, setRandomImage] = useState("./assets/placeholder.png");
 
   useEffect(() => {
     fetch("http://localhost:3000/cssgallery")
@@ -29,8 +30,8 @@ export default function Gallery() {
 
   return (
     <div>
-      <Random />
-      <Form addNewImage={addNewImage} />
+      <Random setRandomImage={setRandomImage} randomImage={randomImage} />
+      <Form addNewImage={addNewImage} randomImage={randomImage} />
       <GalleryGrid imageArray={imageArray} onDelete={onDelete} />
     </div>
   );

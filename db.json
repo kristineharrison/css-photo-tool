@@ -14,7 +14,7 @@
       "title": "Circle Image",
       "imageUrl": "https://d1h3pk8iipmcfn.cloudfront.net/blog/wp-content/uploads/2019/07/03115042/Stocksy_txp95f30267efj100_Medium_440112.jpg",
       "caption": "Street Signs",
-      "description": "Use the border-radius property to create a circled image.",
+      "description": "Use the border-radius property to create a circle or oval image.",
       "code": "img { border-radius: 50% }",
       "classStyle": "circle"
     },
@@ -42,7 +42,7 @@
       "imageUrl": "https://untappedcities.com/wp-content/uploads/2014/05/Madison-Square-Park-Cab-Stand-Vintage-Photo-Victorian-NYC.jpg",
       "caption": "Victorian NYC",
       "description": "Apply a blur effect to an image.",
-      "code": "img { filter: blur(35px); }",
+      "code": "img { filter: blur(3px); }",
       "classStyle": "blur"
     },
     {
@@ -76,11 +76,6 @@
       "id": 5
     },
     {
-      "image": "https://media.wired.co.uk/photos/60c8730fa81eb7f50b44037e/3:2/w_3329,h_2219,c_limit/1521-WIRED-Cat.jpeg",
-      "style": "hue",
-      "id": 11
-    },
-    {
       "image": "https://kb.rspca.org.au/wp-content/uploads/2021/07/collie-beach-bokeh.jpg",
       "style": "opacity",
       "id": 12
@@ -109,6 +104,31 @@
       "image": "https://www.countrysideveterinaryclinic.org/sites/default/files/styles/large/public/australian-shepherd-dog-breed-info.jpg?itok=XVVrY23r",
       "style": "blur",
       "id": 19
+    },
+    {
+      "image": "https://images.dog.ceo/breeds/rottweiler/n02106550_4129.jpg",
+      "style": "circle",
+      "id": 21
+    },
+    {
+      "image": "https://images.dog.ceo/breeds/rottweiler/n02106550_5311.jpg",
+      "style": "opacity",
+      "id": 22
+    },
+    {
+      "image": "https://images.dog.ceo/breeds/pekinese/n02086079_6180.jpg",
+      "style": "rounded",
+      "id": 23
+    },
+    {
+      "image": "https://images.dog.ceo/breeds/mountain-bernese/n02107683_3034.jpg",
+      "style": "hue",
+      "id": 24
+    },
+    {
+      "image": "https://images.dog.ceo/breeds/terrier-australian/n02096294_1147.jpg",
+      "style": "dropshadow",
+      "id": 25
     }
   ]
 }

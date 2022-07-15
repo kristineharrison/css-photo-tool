@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Form({ addNewImage }) {
+export default function Form({ addNewImage, randomImage }) {
   const [formData, setFormData] = useState({
     image: "",
     style: "",
@@ -13,12 +13,12 @@ export default function Form({ addNewImage }) {
   function handleSubmit(e) {
     e.preventDefault();
     let newImage = {
-      image: formData.image,
+      image: randomImage ? randomImage : formData.image,
       style: formData.style,
     };
     addNewImage(newImage);
     setFormData({
-      image: " ",
+      image: "Or enter an image URL...",
       style: "",
     });
   }
@@ -30,7 +30,7 @@ export default function Form({ addNewImage }) {
           <input
             type="text"
             name="image"
-            placeholder="Enter an image URL..."
+            placeholder="Or enter an image URL..."
             defaultValue={formData.image}
             onChange={handleChange}
           />
